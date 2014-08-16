@@ -1,0 +1,303 @@
+/* CSS Document */
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('fonts/HelveticaNeueThn.woff') format('woff'), url('fonts/HelveticaNeueThn.ttf') format('truetype'), url('fonts/HelveticaNeueThn.otf') format('opentype');
+}
+
+.spacer-1x{ margin-top:10px; }
+.spacer-2x{ margin-top:20px; }
+.spacer-3x{ margin-top:30px; }
+.spacer-4x{ margin-top:40px; }
+
+.navbar-toggle{
+	display:block;
+}
+
+body{
+	background:url(images/site-bg.jpg) top;
+	background-attachment:fixed;
+	background-size:100% auto;
+	color:#FFF;
+	font-family: 'HelveticaNeue';
+	/*overflow:hidden;*/
+}
+
+.container{
+	width:100%;
+	min-width:560px;
+	/*position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:-35px;
+	padding-right:30px;
+	overflow-y:scroll;*/
+}
+
+.icon-bar{
+	background:#FFF;
+}
+
+.navbar-toggle{
+	border-color:#FFF;
+	float:left;
+}
+
+.head-section{
+	min-height:50px;
+	position:fixed;
+	z-index:999;
+	left:0px;
+	right:0px;
+	background-color:rgba(0,0,0,0.75);
+}
+
+.head-section h3{
+	font-size:1.75em;
+	margin:0px;
+}
+
+.head-section .title{
+	display:table;
+	width:100%;
+	height:50px;
+}
+
+.head-section .title .middle{
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.head-section .left{
+	position:absolute;
+	left:0px;
+}
+
+.head-section .right{
+	position:absolute;
+	right:0px;
+	top:50%;
+	width:45px;
+	height:35px;
+	margin-top:-17.5px;
+	text-align:center;
+	display:table;
+}
+
+.head-section .refresh{
+	display:table-cell;
+	vertical-align:middle;
+	overflow:hidden;
+}
+
+.head-section .refresh img{
+	max-height:100%;
+	max-width:100%;
+}
+
+.block{
+	display:block;
+	margin-bottom:20px;
+	border: 1px solid #555;
+}
+
+.tile{
+	height:96px;
+	width:100%;
+	overflow:hidden;
+	background:#222;
+	position:relative;
+	z-index:100;
+}
+
+.tile img{
+	min-height:100%;
+	min-width:100%;
+	height:auto;
+	z-index:200;
+}
+
+.tile .mask{
+	position:absolute;
+	height:100%;
+	left:0px;
+	right:0px;
+	top:0px;
+	border:0px;
+	/* background:rgba(0,0,0,0.5); */
+	z-index:999;
+}
+
+.tile .status{
+	display:table;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	z-index:300;
+}
+
+.tile h2{
+	text-transform:uppercase;
+	font-size:48px;
+}
+
+small{
+	color:#fff !important;
+}
+
+.tile h2, .tile h5{
+	float:left;
+	margin:0px;
+	clear:left;
+}
+
+.details{
+	background:rgba(0,0,0,0.35);
+	display:table;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.col-1x{
+	float:left;
+	width:15%;
+	/*min-width:75px;*/
+}
+
+.col-2x{
+	float:left;
+	width:25%;
+	/*min-width:125px;*/
+}
+
+.col-3x{
+	float:left;
+	width:30%;
+	/*min-width:150px;*/
+}
+
+.col-1x, .col-2x, .col-3x{
+	padding:2px;
+	height:75px;
+	text-align:center;
+	border-right:1px solid #444;
+	overflow:hidden;
+	position:relative;
+}
+
+.col-1x.last{
+	border-right:none;
+}
+
+.details img, .details .image img{
+	height:100%;
+	width:auto;
+	padding:10px;
+}
+
+.details p{
+	margin:0px;
+	text-align:center;
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	padding:10px;
+	color:#AAA;
+}
+
+.details .image{
+	display:inline-block;
+	height:100%;
+	position:relative;
+}
+
+.details .image img{
+	height:100%;
+	width:auto;
+}
+
+.details .image .percentages{
+	position:absolute;
+	z-index:500;
+	top:6px;
+	left:22px;
+	font-size:1.7em;
+}
+
+.tile .special{
+	display: table;
+	position:relative;
+	z-index: 300;
+	padding:15px;
+	width:100%;
+}
+
+.tile .special h3{
+	text-transform:uppercase;
+	margin:10px 0px;
+	font-size:2.1em;
+}
+
+.auto-height{
+	max-height:none;
+	height:auto;
+}
+
+.tile .special h4{
+	text-transform:uppercase;
+	padding:8px;
+	margin:0px;
+	background-color:rgba(0,0,0,0.5);
+}
+
+.tile .special-content{
+	margin-left:15px;
+}
+
+.close-btn{
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	z-index:1000;
+}
+
+.close-btn a, .close-btn a:hover{
+	color:#FFF;
+	font-size:2em;
+	text-decoration:none;
+}
+
+.block.pop{
+	display:none;
+}
+
+.default-bg{
+	background:url(images/tile-images/no-image.png) center center no-repeat;
+	background-size:cover;
+}
+
+.cover{
+	position:relative;
+	display:inline-block;
+	height:100%;
+}
+
+.cover .text{
+	color:#EEE;
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:21px;
+	height:24px;
+	margin-left:-10px;
+	margin-top:-14px;
+	text-align:center;
+	font-size:0.9em;
+}
+
+@media (max-width: 550px){
+	
+}
